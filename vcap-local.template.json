@@ -3,8 +3,7 @@
       "cloudantNoSQLDB": [
         {
           "credentials": {
-            "username":"CLOUDANT_DATABASE_USERNAME",
-            "password":"CLOUDANT_DATABASE_PASSWORD",
+            "apikey":"CLOUDANT_DATABASE_APIKEY",
             "host":"CLOUDANT_DATABASE_HOST"
           },
           "label": "cloudantNoSQLDB"
