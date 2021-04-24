@@ -2,7 +2,7 @@
 
 To get started, we'll take you through a sample Python Flask app, help you set up a development environment, deploy to IBM Cloud and add a Cloudant database.
 
-The following instructions are for deploying the application as a Cloud Foundry application. 
+The following instructions are for deploying the application as a Cloud Foundry application. Refer the documentation [IBM Cloud Cloudant api docs](https://cloud.ibm.com/apidocs/cloudant?code=python)
 
 ## Prerequisites
 
@@ -109,7 +109,7 @@ We're now going to update your local code to point to this database. We'll creat
       "cloudantNoSQLDB": [
         {
           "credentials": {
-            "apikey":"CLOUDANT_DATABASE_PASSWORD",
+            "apikey":"CLOUDANT_DATABASE_APIKEY",
             "host":"CLOUDANT_DATABASE_HOST"
           },
           "label": "cloudantNoSQLDB"
@@ -121,11 +121,11 @@ We're now going to update your local code to point to this database. We'll creat
 
 2. Back in the IBM Cloud UI, select your App -> Connections -> Cloudant -> View Credentials
 
-3. Copy and paste the `username`, `password`, and `host` from the credentials to the same fields of the `vcap-local.json` file replacing **CLOUDANT_DATABASE_USERNAME**, **CLOUDANT_DATABASE_PASSWORD**, and **CLOUDANT_DATABASE_URL**.
+3. Copy and paste the `username`, `password`, and `host` from the credentials to the same fields of the `vcap-local.json` file replacing **CLOUDANT_DATABASE_APIKEY** and **CLOUDANT_DATABASE_URL**.
 
 4. Run your application locally.
   ```
-python hello.py
+python3 hello.py
   ```
 
   View your app at: http://localhost:8000. Any names you enter into the app will now get added to the database.
