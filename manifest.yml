@@ -1,5 +1,10 @@
----
-applications:
- - name: GetStartedPython
-   random-route: true
-   memory: 128M
+--- 
+applications: 
+  - 
+    buildpacks: 
+      - python_buildpack
+    command: "python hello.py"
+    memory: 128M
+    name: GetStartedPython
+    random-route: true
+    timeout: 600
