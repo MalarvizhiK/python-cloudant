@@ -1,0 +1,13 @@
+{
+    "services": {
+      "cloudantNoSQLDB": [
+        {
+          "credentials": {
+            "apikey":"CLOUDANT_DATABASE_APIKEY",
+            "host":"CLOUDANT_DATABASE_HOST"
+          },
+          "label": "cloudantNoSQLDB"
+        }
+      ]
+    }
+  }
